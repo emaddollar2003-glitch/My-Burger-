@@ -1,0 +1,146 @@
+/* تنسيق عام للصفحة */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0f172a;
+    color: #f8fafc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 15px;
+}
+
+/* بطاقة السيرة الذاتية */
+.card {
+    background: #1e293b;
+    width: 100%;
+    max-width: 450px;
+    padding: 30px 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+header {
+    margin-bottom: 25px;
+}
+
+/* صورة الملف الشخصي */
+.avatar {
+    width: 90px;
+    height: 90px;
+    background: #3b82f6;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: white;
+    box-shadow: 0 4px 10px rgba(59, 130, 246, 0.4);
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.title {
+    color: #94a3b8;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.bio {
+    font-size: 14px;
+    color: #cbd5e1;
+    line-height: 1.5;
+}
+
+section {
+    margin-bottom: 25px;
+    text-align: right;
+}
+
+section h2 {
+    font-size: 16px;
+    color: #38bdf8;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* تنسيق أزرار المشاريع */
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.project-item {
+    background: #0f172a;
+    color: #f8fafc;
+    padding: 12px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    border: 1px solid #334155;
+    transition: 0.3s;
+}
+
+.project-item:hover {
+    border-color: #38bdf8;
+    background: #1e293b;
+}
+
+/* تنسيق أزرار التواصل */
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn {
+    padding: 12px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    font-size: 15px;
+    transition: 0.3s;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.download-btn { background: #3b82f6; }
+.download-btn:hover { background: #2563eb; }
+
+.whatsapp { background: #22c55e; }
+.whatsapp:hover { background: #16a34a; }
+
+.call { background: #64748b; }
+.call:hover { background: #475569; }
+
+.github { background: #334155; }
+.github:hover { background: #1e293b; }
+
+footer {
+    font-size: 12px;
+    color: #64748b;
+    margin-top: 20px;
+    border-top: 1px solid #334155;
+    padding-top: 15px;
+}
