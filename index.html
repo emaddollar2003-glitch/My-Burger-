@@ -9,6 +9,14 @@
 </head>
 <body>
 
+    <!-- نافذة الترحيب المنبثقة (تختفي تلقائياً بعد 4 ثوانٍ) -->
+    <div id="welcome-popup">
+        <div class="popup-content">
+            <span class="wave-emoji">👋</span>
+            <h3>أهلاً بك.. حيث يلتقي الإبداع بالبرمجة والمحتوى.</h3>
+        </div>
+    </div>
+
     <div class="card">
         <header>
             <img src="profile.jpeg" alt="عماد" class="profile-img">
@@ -45,5 +53,16 @@
 
         <footer><p>© 2026 عماد. جميع الحقوق محفوظة.</p></footer>
     </div>
+
+    <!-- كود برمجي بسيط جداً لإخفاء نافذة الترحيب بعد 4 ثوانٍ -->
+    <script>
+        setTimeout(function() {
+            const popup = document.getElementById('welcome-popup');
+            if (popup) {
+                popup.style.opacity = '0';
+                setTimeout(() => { popup.style.display = 'none'; }, 600); // وقت التلاشي
+            }
+        }, 4000); // 4 ثوانٍ
+    </script>
 </body>
 </html>
