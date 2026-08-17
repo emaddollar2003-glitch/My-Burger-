@@ -9,7 +9,7 @@
 </head>
 <body>
 
-    <!-- نافذة الترحيب المنبثقة (تختفي تلقائياً بعد 4 ثوانٍ) -->
+    <!-- نافذة الترحيب المنبثقة -->
     <div id="welcome-popup">
         <div class="popup-content">
             <span class="wave-emoji">👋</span>
@@ -19,7 +19,7 @@
 
     <div class="card">
         <header>
-            <img src="profile.jpeg" alt="عماد" class="profile-img">
+            <img src="profile.JPEG" alt="عماد" class="profile-img">
             <h1>عماد</h1>
             <p class="title">مطور برمجيات | صانع محتوى | مونتير | مصمم مواقع | مخرج أفكار</p>
             
@@ -31,8 +31,12 @@
         <section id="projects">
             <h2><i class="fa-solid fa-briefcase"></i> أبرز أعمالي</h2>
             <div class="project-list">
-                <a href="#" class="project-item"><span>منصة المطاعم الذكية</span> <i class="fa-solid fa-arrow-left"></i></a>
-                <a href="#" class="project-item"><span>تطبيق الطلبات الإلكتروني</span> <i class="fa-solid fa-arrow-left"></i></a>
+                <a href="#" class="project-item"><span>تصميم مينيو</span> <i class="fa-solid fa-arrow-left"></i></a>
+                <a href="#" class="project-item"><span>تصميم بوسترات</span> <i class="fa-solid fa-arrow-left"></i></a>
+                <a href="#" class="project-item"><span>مونتير فيديوهات</span> <i class="fa-solid fa-arrow-left"></i></a>
+                <a href="#" class="project-item"><span>إخراج أفكار</span> <i class="fa-solid fa-arrow-left"></i></a>
+                <a href="#" class="project-item"><span>تصميم مواقع ويب</span> <i class="fa-solid fa-arrow-left"></i></a>
+                <a href="#" class="project-item"><span>برمجة تطبيقات هواتف</span> <i class="fa-solid fa-arrow-left"></i></a>
             </div>
         </section>
 
@@ -54,15 +58,15 @@
         <footer><p>© 2026 عماد. جميع الحقوق محفوظة.</p></footer>
     </div>
 
-    <!-- كود برمجي بسيط جداً لإخفاء نافذة الترحيب بعد 4 ثوانٍ -->
+    <!-- كود إخفاء نافذة الترحيب بعد 4 ثوانٍ -->
     <script>
         setTimeout(function() {
             const popup = document.getElementById('welcome-popup');
             if (popup) {
                 popup.style.opacity = '0';
-                setTimeout(() => { popup.style.display = 'none'; }, 600); // وقت التلاشي
+                setTimeout(() => { popup.style.display = 'none'; }, 600);
             }
-        }, 4000); // 4 ثوانٍ
+        }, 4000);
     </script>
 </body>
 </html>
